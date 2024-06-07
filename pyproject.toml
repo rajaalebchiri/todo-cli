@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "todo-cli"
+version = "0.1.0"
+description = ""
+authors = ["rajaalebchiri <rajaa.lebchiri@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+todo-cli = "todo_cli.todo:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
