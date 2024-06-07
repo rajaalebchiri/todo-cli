@@ -16,8 +16,7 @@ def read_todos():
 
 def display_task(i=1, todo=""):
     """Display a task in good format"""
-    return f"{i}. {todo["task"]} {
-        "✓" if todo["status"] == "done" else "X"} - {todo["date"]}"
+    return f"{i}. {todo['task']} {'[✓]' if todo['status'] == 'done' else '[x]'} - {todo['date']}"
 
 
 def create_todos(todos):
